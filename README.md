@@ -1,6 +1,7 @@
 # Movie Touch
 
 This project has been built to show all Upcoming movies with a search option.
+It's using the architecture Reactive MVVM (MVVM with RxSwift)
 
 ## Getting Started
 
