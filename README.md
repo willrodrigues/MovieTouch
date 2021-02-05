@@ -14,12 +14,6 @@ Cloning repository:
 git clone https://github.com/willrodrigues/MovieTouch.git
 ```
 
-Checkout to development branch:
-
-```
-git checkout development
-```
-
 Installing required PODs:
 
 ```
