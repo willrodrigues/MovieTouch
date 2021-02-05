@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E0B5AB3350239140D5A30C9 /* Pods_MovieTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFB945E05FB5C0B4DB7927A /* Pods_MovieTouch.framework */; };
+		46B1D0DFD547A0AFE0269F51 /* Pods_MovieTouchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071D2DCD96E8B273D361EE6A /* Pods_MovieTouchUITests.framework */; };
 		BE20E74422D0DE8900EE0942 /* Genres.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE20E74322D0DE8900EE0942 /* Genres.swift */; };
 		BE20E74622D132AF00EE0942 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE20E74522D132AF00EE0942 /* CustomSearchBar.swift */; };
 		BE327F2022CD521D007CA723 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE327F1F22CD521D007CA723 /* URLRequest+Extensions.swift */; };
@@ -111,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B1D0DFD547A0AFE0269F51 /* Pods_MovieTouchUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +351,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEE387C522D286A3000714E9 /* Build configuration list for PBXNativeTarget "MovieTouchUITests" */;
 			buildPhases = (
+				5F92CFC7410C7BC49966B1F9 /* [CP] Check Pods Manifest.lock */,
 				BEE387BA22D286A3000714E9 /* Sources */,
 				BEE387BB22D286A3000714E9 /* Frameworks */,
 				BEE387BC22D286A3000714E9 /* Resources */,
@@ -370,7 +373,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Will Rodrigues";
 				TargetAttributes = {
 					BE837B8F22CA6A4D00C6D8F6 = {
@@ -435,6 +438,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5F92CFC7410C7BC49966B1F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MovieTouchUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		673BB7849555311DDC5AA4EE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -591,6 +616,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -652,6 +678,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -765,6 +792,7 @@
 		};
 		BEE387C622D286A3000714E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8FB8E896583C8A8A1F1C197 /* Pods-MovieTouchUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Z62BC38DU;
@@ -784,6 +812,7 @@
 		};
 		BEE387C722D286A3000714E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4786294ABAD940C30E12BE4 /* Pods-MovieTouchUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Z62BC38DU;

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zpu-SP-ikN">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zpu-SP-ikN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +11,7 @@
         <!--Upcoming-->
         <scene sceneID="F6m-Ua-14S">
             <objects>
-                <viewController storyboardIdentifier="UpcomingViewController" id="l69-9z-giT" customClass="UpcomingViewController" customModule="MovieTouch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UpcomingViewController" modalPresentationStyle="fullScreen" id="l69-9z-giT" customClass="UpcomingViewController" customModule="MovieTouch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zeV-EJ-dWb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -78,6 +76,7 @@
                                 </userDefinedRuntimeAttributes>
                             </searchBar>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="481-2H-Auf"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="481-2H-Auf" firstAttribute="bottom" secondItem="3iA-5K-lao" secondAttribute="bottom" id="4V3-6k-MQw"/>
@@ -88,7 +87,6 @@
                             <constraint firstItem="3iA-5K-lao" firstAttribute="leading" secondItem="481-2H-Auf" secondAttribute="leading" id="q1h-iO-KUo"/>
                             <constraint firstItem="Vhf-Am-J4J" firstAttribute="leading" secondItem="481-2H-Auf" secondAttribute="leading" id="uBV-1I-Zac"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="481-2H-Auf"/>
                     </view>
                     <navigationItem key="navigationItem" title="Upcoming" id="XQH-vw-gvA"/>
                     <connections>
@@ -104,7 +102,7 @@
         <!--Movie Details-->
         <scene sceneID="Waq-Q4-e9h">
             <objects>
-                <viewController storyboardIdentifier="MovieDetailsViewController" id="Chb-Gl-aag" customClass="MovieDetailsViewController" customModule="MovieTouch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MovieDetailsViewController" modalPresentationStyle="fullScreen" id="Chb-Gl-aag" customClass="MovieDetailsViewController" customModule="MovieTouch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hth-It-vsp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,6 +176,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="5EY-Pu-Uke"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="QeI-Vw-jIE" firstAttribute="centerX" secondItem="hth-It-vsp" secondAttribute="centerX" id="8jL-pU-iOY"/>
@@ -186,7 +185,6 @@
                             <constraint firstItem="QeI-Vw-jIE" firstAttribute="top" secondItem="5EY-Pu-Uke" secondAttribute="top" id="b87-ic-4Wz"/>
                             <constraint firstItem="QeI-Vw-jIE" firstAttribute="bottom" secondItem="5EY-Pu-Uke" secondAttribute="bottom" id="s6e-Fp-H6W"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="5EY-Pu-Uke"/>
                     </view>
                     <navigationItem key="navigationItem" title="Movie Details" id="Mxk-DG-S6r"/>
                     <connections>
@@ -207,7 +205,7 @@
         <!--Navigation Controller-->
         <scene sceneID="srs-4B-7RG">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zpu-SP-ikN" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Zpu-SP-ikN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aey-gR-tvX">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -225,7 +223,7 @@
         <!--Navigation Controller-->
         <scene sceneID="yf6-WN-kZM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BcM-7I-uU2" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="BcM-7I-uU2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BwM-cO-GK8">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -241,6 +239,11 @@
             <point key="canvasLocation" x="1693" y="115"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="Vhf-Am-J4J">
+            <size key="intrinsicContentSize" width="-1" height="56"/>
+        </designable>
+    </designables>
     <resources>
         <image name="StartupImage" width="306" height="306"/>
     </resources>
